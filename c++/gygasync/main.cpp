@@ -16,6 +16,7 @@ public:
             if(x==y&&y==z&&x==z)
                 cout<<"Kvadar je Kocka"<<endl;
         }
+        void SferaKvadra() {cout<<"Sfera opisana oko kvadra ima poluprecnik: "<<sqrt(x*x+y*y+z*z)/2<<endl;};
 };
 
 int main()
@@ -30,7 +31,7 @@ int main()
     rad.ZapreminaKvadra();
     rad.PovrsinaKvadra();
     rad.GlavnaDijagonalaKvadra();
+    rad.SferaKvadra();
     rad.BoolKocka();
-
     return 0;
 }
