@@ -39,7 +39,7 @@ public:
             COLORREF boja2 = RGB(0,0,255);
             for(int i=0;i<(int)(ax*10);i++)
             {
-                SetPixel(dc,i,0+visina,boja);
+                SetPixel(dc,i,visina,boja);
                 SetPixel(dc,i,(int)(cx*10)+visina,boja);
                 SetPixel(dc,i+visina,0,boja);
                 SetPixel(dc,i+visina,(int)(cx*10),boja2);

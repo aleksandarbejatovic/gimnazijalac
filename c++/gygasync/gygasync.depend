@@ -7,17 +7,21 @@
 	"kvadar.h"
 	"meni.h"
 
-1395435778 x:\github\gimnazijalac\c++\gygasync\kvadar.h
+1395438565 x:\github\gimnazijalac\c++\gygasync\kvadar.h
 	<iostream>
 	<cmath>
 	<cstdlib>
 	<windows.h>
 
-1395433984 x:\github\gimnazijalac\c++\gygasync\meni.h
+1395438164 x:\github\gimnazijalac\c++\gygasync\meni.h
 	<iostream>
 	"kvadar.h"
 	"lopta.h"
+	"tetraedar.h"
 
-1395437130 x:\github\gimnazijalac\c++\gygasync\lopta.h
+1395438027 x:\github\gimnazijalac\c++\gygasync\lopta.h
+	<iostream>
+
+1395442003 x:\github\gimnazijalac\c++\gygasync\tetraedar.h
 	<iostream>
 
