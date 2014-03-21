@@ -59,6 +59,8 @@ public:
             ReleaseDC(konzola, dc);
             Sleep(4000);
             system("pause");
+            for(int i=0;i<50;i++) cout<<"\n"; //Izbrise kvadar sa ekrana posto cls ne brise
+            system("cls");
         };
         void Prikazi()
         {
