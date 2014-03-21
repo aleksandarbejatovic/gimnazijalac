@@ -3,8 +3,10 @@
 	<iostream>
 	<cmath>
 
-1395417538 source:x:\github\gimnazijalac\c++\gygasync\main.cpp
+1395428502 source:x:\github\gimnazijalac\c++\gygasync\main.cpp
 	<iostream>
 	<cmath>
 	<cstdlib>
+	<windows.h>
+	<conio.h>
 
