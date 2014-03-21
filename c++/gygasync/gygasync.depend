@@ -3,10 +3,21 @@
 	<iostream>
 	<cmath>
 
-1395428502 source:x:\github\gimnazijalac\c++\gygasync\main.cpp
+1395433267 source:x:\github\gimnazijalac\c++\gygasync\main.cpp
+	"kvadar.h"
+	"meni.h"
+
+1395435778 x:\github\gimnazijalac\c++\gygasync\kvadar.h
 	<iostream>
 	<cmath>
 	<cstdlib>
 	<windows.h>
-	<conio.h>
+
+1395433984 x:\github\gimnazijalac\c++\gygasync\meni.h
+	<iostream>
+	"kvadar.h"
+	"lopta.h"
+
+1395437130 x:\github\gimnazijalac\c++\gygasync\lopta.h
+	<iostream>
 
