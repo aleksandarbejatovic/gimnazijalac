@@ -5,6 +5,7 @@
 #include "kvadar.h"
 #include "lopta.h"
 #include "tetraedar.h"
+#include "kupa.h"
 
 using namespace std;
 
@@ -16,10 +17,10 @@ private:
 public:
         void Prikazi()
         {
-            while(izbor!=4)
+            while(izbor!=5)
             {
                 system("cls");
-                cout<<"Izaberi figuru:\n 1. Kvadar\n 2. Lopta\n 3. Tetraedar\n 4. Izlaz"<<endl;
+                cout<<"Izaberi figuru:\n 1. Kvadar\n 2. Lopta\n 3. Tetraedar\n 4. Kupa\n 5. Izlaz"<<endl;
                 cin>>izbor;
                 switch(izbor)
                 {
@@ -63,6 +64,21 @@ public:
                         cout<<endl;
                         tetraedarmeni.Postavi(k);
                         tetraedarmeni.Prikazi();
+                    }
+                case 4:
+                    {
+                        system("cls");
+                        KupaMeni kupameni;
+                        cout<<"Unesi poluprecnik"<<endl;
+                        double k, l;
+                        cout<<"r=";
+                        cin>>k;
+                        cout<<"Unesi visinu"<<endl;
+                        cout<<"h=";
+                        cin>>l;
+                        cout<<endl;
+                        kupameni.Postavi(k,l);
+                        kupameni.Prikazi();
                     }
                 default:
                     break;

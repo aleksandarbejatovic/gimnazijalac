@@ -13,15 +13,19 @@
 	<cstdlib>
 	<windows.h>
 
-1395438164 x:\github\gimnazijalac\c++\gygasync\meni.h
+1395480399 x:\github\gimnazijalac\c++\gygasync\meni.h
 	<iostream>
 	"kvadar.h"
 	"lopta.h"
 	"tetraedar.h"
+	"kupa.h"
 
 1395438027 x:\github\gimnazijalac\c++\gygasync\lopta.h
 	<iostream>
 
 1395442003 x:\github\gimnazijalac\c++\gygasync\tetraedar.h
+	<iostream>
+
+1395482748 x:\github\gimnazijalac\c++\gygasync\kupa.h
 	<iostream>
 
