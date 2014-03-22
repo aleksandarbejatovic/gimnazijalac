@@ -32,8 +32,12 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="kupa.h" />
 		<Unit filename="kvadar.h" />
+		<Unit filename="lopta.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="meni.h" />
+		<Unit filename="tetraedar.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
