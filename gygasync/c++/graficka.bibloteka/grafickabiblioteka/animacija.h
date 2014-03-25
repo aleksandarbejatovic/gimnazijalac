@@ -26,7 +26,7 @@ void animirajispunjeniPravougaonik(int ax, int ay, int bx, int by, COLORREF boja
     for(int i = 0; i<krajnjaTacka; i++)
     {
         ispunjeniPravougaonik(ax+i, ay, bx+i, by, boja);
-        ispunjeniPravougaonik(ax-ax, ay-1, bx-bx, by+1, RGB(0,0,0));
+        ispunjeniPravougaonik(ax-bx+i, ay-1, ay+i, by+1, RGB(0,0,0));
         Sleep(brzina);
     }
 }
