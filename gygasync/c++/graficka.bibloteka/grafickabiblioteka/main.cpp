@@ -5,5 +5,5 @@ using namespace std;
 
 int main()
 {
-    animirajispunjeniPravougaonik(10,10,60,60,RGB(255,255,255),250, 10);
+    animirajispunjeniPravougaonik(10,10,70,60,RGB(0,255,0),250, 10);
 }
