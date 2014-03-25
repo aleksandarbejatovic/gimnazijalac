@@ -29,3 +29,29 @@
 1395482748 x:\github\gimnazijalac\c++\gygasync\kupa.h
 	<iostream>
 
+1395757763 source:c:\users\cdjete\documents\githubi\gimnazijalac\gygasync\c++\geom.figure\main.cpp
+	"kvadar.h"
+	"meni.h"
+
+1395757763 c:\users\cdjete\documents\githubi\gimnazijalac\gygasync\c++\geom.figure\kvadar.h
+	<iostream>
+	<cmath>
+	<cstdlib>
+	<windows.h>
+
+1395757763 c:\users\cdjete\documents\githubi\gimnazijalac\gygasync\c++\geom.figure\meni.h
+	<iostream>
+	"kvadar.h"
+	"lopta.h"
+	"tetraedar.h"
+	"kupa.h"
+
+1395757763 c:\users\cdjete\documents\githubi\gimnazijalac\gygasync\c++\geom.figure\lopta.h
+	<iostream>
+
+1395757763 c:\users\cdjete\documents\githubi\gimnazijalac\gygasync\c++\geom.figure\tetraedar.h
+	<iostream>
+
+1395757763 c:\users\cdjete\documents\githubi\gimnazijalac\gygasync\c++\geom.figure\kupa.h
+	<iostream>
+
