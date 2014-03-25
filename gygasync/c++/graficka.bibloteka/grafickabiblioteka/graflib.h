@@ -28,5 +28,19 @@ void Pravougaonik(int ax, int ay, int bx, int by, COLORREF boja)
     ReleaseDC(konzola, dc);
 }
 
+void ispunjeniPravougaonik(int ax, int ay, int bx, int by, COLORREF boja)
+{
+    HWND konzola = GetConsoleWindow();
+    HDC dc = GetDC(konzola);
+    for(int j = ax; j<bx; j++)
+    {
+        for(int i = ay; i<by; i++)
+        {
+            SetPixel(dc, j, i, boja);
+        }
+    }
+    ReleaseDC(konzola, dc);
+}
+
 
 #endif // GRAFLIB_H_INCLUDED

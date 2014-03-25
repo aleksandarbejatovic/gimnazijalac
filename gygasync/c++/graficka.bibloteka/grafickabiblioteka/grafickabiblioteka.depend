@@ -1,13 +1,13 @@
 # depslib dependency file v1.0
-1395760046 source:c:\users\cdjete\documents\githubi\gimnazijalac\gygasync\c++\graficka.bibloteka\grafickabiblioteka\main.cpp
+1395761732 source:c:\users\cdjete\documents\githubi\gimnazijalac\gygasync\c++\graficka.bibloteka\grafickabiblioteka\main.cpp
 	<iostream>
 	"animacija.h"
 
-1395759434 c:\users\cdjete\documents\githubi\gimnazijalac\gygasync\c++\graficka.bibloteka\grafickabiblioteka\graflib.h
+1395761156 c:\users\cdjete\documents\githubi\gimnazijalac\gygasync\c++\graficka.bibloteka\grafickabiblioteka\graflib.h
 	"windows.h"
 	<cmath>
 	<cstdlib>
 
-1395760172 c:\users\cdjete\documents\githubi\gimnazijalac\gygasync\c++\graficka.bibloteka\grafickabiblioteka\animacija.h
+1395761679 c:\users\cdjete\documents\githubi\gimnazijalac\gygasync\c++\graficka.bibloteka\grafickabiblioteka\animacija.h
 	"graflib.h"
 
