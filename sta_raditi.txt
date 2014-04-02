@@ -1,0 +1,3 @@
+Veoma dobar sajt, objasnjave vecinu funkcija u c++ http://www.cplusplus.com/
+Evo kratko objasnjenje funkcija http://www.cplusplus.com/doc/tutorial/functions/ 
+Pogledajte kod https://github.com/aleksandarbejatovic/gimnazijalac/blob/master/gygasync/c%2B%2B/Geom.figure/ koji objasnajva klase i kako se implementuju
