@@ -1,0 +1,13 @@
+1. Veoma dobar sajt, objasnjave vecinu funkcija u c++ http://www.cplusplus.com/
+
+2. Evo kratko objasnjenje funkcija http://www.cplusplus.com/doc/tutorial/functions/ 
+
+3. Pogledajte kod https://github.com/aleksandarbejatovic/gimnazijalac/blob/master/gygasync/c%2B%2B/Geom.figure/ koji objasnajva klase i kako se implementuju
+
+4. http://thenewboston.org/tutorials.php - razni dobri tutorijali
+
+5. https://www.youtube.com/user/mycodeschool/videos - dobra objasnjenja
+
+6. stackoverflow.com
+
+7. https://www.youtube.com/user/Computerphile/videos - random

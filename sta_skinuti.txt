@@ -1,0 +1,3 @@
+skinuti drugi link, mingw verziju http://www.codeblocks.org/downloads/26
+VC++ 2008 Express, 2008 je stabilniji http://go.microsoft.com/?linkid=7729279
+ne skidati sql server
