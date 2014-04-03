@@ -200,6 +200,10 @@
 				>
 			</File>
 			<File
+				RelativePath=".\boje.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\cpick.cpp"
 				>
 			</File>
@@ -229,6 +233,15 @@
 			Filter="h;hpp;hxx;hm;inl;inc;xsd"
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
+			<File
+				RelativePath=".\boje.h"
+				FileType="3"
+				>
+				<File
+					RelativePath=".\boje.resx"
+					>
+				</File>
+			</File>
 			<File
 				RelativePath=".\Form1.h"
 				FileType="3"

@@ -5,6 +5,9 @@
 #include <string>
 #include <sstream>
 #include <iomanip>
+#include <cmath>
+#include "boje.h"
+
 
 namespace cpick {
 
@@ -90,6 +93,17 @@ namespace cpick {
 	private: System::Windows::Forms::TrackBar^  trackCyan;
 	private: System::Windows::Forms::Button^  puno;
 	private: System::Windows::Forms::Button^  mini;
+	private: System::Windows::Forms::Button^  button1;
+
+
+	private: System::ComponentModel::IContainer^  components;
+
+
+	private: 
+
+
+
+
 
 
 
@@ -111,7 +125,7 @@ namespace cpick {
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
-		System::ComponentModel::Container ^components;
+
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
@@ -158,6 +172,7 @@ namespace cpick {
 			this->trackCyan = (gcnew System::Windows::Forms::TrackBar());
 			this->puno = (gcnew System::Windows::Forms::Button());
 			this->mini = (gcnew System::Windows::Forms::Button());
+			this->button1 = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->textRed))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->textGreen))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->textBlue))->BeginInit();
@@ -552,12 +567,23 @@ namespace cpick {
 			this->mini->UseVisualStyleBackColor = true;
 			this->mini->Click += gcnew System::EventHandler(this, &Form1::mini_Click);
 			// 
+			// button1
+			// 
+			this->button1->Location = System::Drawing::Point(15, 267);
+			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(85, 28);
+			this->button1->TabIndex = 29;
+			this->button1->Text = L"Sheme boja";
+			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Click += gcnew System::EventHandler(this, &Form1::button1_Click);
+			// 
 			// Form1
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::SystemColors::Control;
-			this->ClientSize = System::Drawing::Size(275, 309);
+			this->ClientSize = System::Drawing::Size(861, 309);
+			this->Controls->Add(this->button1);
 			this->Controls->Add(this->mini);
 			this->Controls->Add(this->puno);
 			this->Controls->Add(this->groupBox2);
@@ -581,8 +607,9 @@ namespace cpick {
 			this->Controls->Add(this->textBlue);
 			this->Controls->Add(this->textGreen);
 			this->Controls->Add(this->textRed);
-			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedToolWindow;
+			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedDialog;
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^  >(resources->GetObject(L"$this.Icon")));
+			this->MaximizeBox = false;
 			this->Name = L"Form1";
 			this->Text = L"Izabirac boja";
 			this->Load += gcnew System::EventHandler(this, &Form1::Form1_Load);
@@ -672,6 +699,14 @@ void promjeniBoju()
 	trackMagenta->Value=m;
 	trackYellow->Value=y;
 	trackKey->Value=k;
+	boje ^ Boje = gcnew boje();
+			 Boje->r=r;
+			 Boje->g=g;
+			 Boje->b=b;
+			 Boje->c=c;
+			 Boje->m=m;
+			 Boje->y=y;
+			 Boje->k=k;
 }
 #pragma endregion
 	private: System::Void Form1_Load(System::Object^  sender, System::EventArgs^  e) {
@@ -777,6 +812,11 @@ private: System::Void puno_Click(System::Object^  sender, System::EventArgs^  e)
 private: System::Void mini_Click(System::Object^  sender, System::EventArgs^  e) {
 			 this->ClientSize = System::Drawing::Size(281, 309);
 			 puno->Visible=true;
+		 }
+
+private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
+			 boje ^ Boje = gcnew boje();
+			 Boje->Show();
 		 }
 };
 }
