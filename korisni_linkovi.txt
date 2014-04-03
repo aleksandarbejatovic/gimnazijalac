@@ -8,4 +8,6 @@
 
 5. https://www.youtube.com/user/mycodeschool/videos - dobra objasnjenja
 
-6. i naravno stackoverflow.com
+6. stackoverflow.com
+
+7. https://www.youtube.com/user/Computerphile/videos - random
