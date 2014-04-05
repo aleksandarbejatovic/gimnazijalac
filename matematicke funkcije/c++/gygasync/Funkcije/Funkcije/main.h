@@ -111,25 +111,56 @@ namespace Funkcije {
 				 g->Clear(Color::White);
 
 				 Pen^ osa = gcnew Pen(Color::Black);
+				 Pen^ mreza = gcnew Pen(Color::Aqua);
+				 System::Drawing::Font^ broj = gcnew System::Drawing::Font("Arial", 16);
+				 SolidBrush^ brush = gcnew SolidBrush(Color::Black);
+				 mreza->Width = 1;
 				 osa->Width = 2;
 				 g->DrawLine(osa,0,visina/2,sirina,visina/2);
 				 g->DrawLine(osa,sirina/2,0,sirina/2,visina);
-				 for(int i = 100; i<=visina/2;i+=100)
+				 for(int i = 100; i<=sirina/2;i+=100)
 				 {
-					 g->DrawLine(osa,(sirina/2)-10,i+visina/2,(sirina/2)+10,i+visina/2);
+					 g->DrawLine(mreza,0,(visina/2)+i,sirina,(visina/2)+i);
+				 }
+				 for(int i = 100; i<=sirina/2;i+=100)
+				 {
+					 g->DrawLine(mreza,0,(visina/2)-i,sirina,(visina/2)-i);
+				 }
+				 for(int i = 100; i<=sirina/2;i+=100)
+				 {
+					 g->DrawLine(mreza,(sirina/2)+i,0,(sirina/2)+i,visina);
+				 }
+				 for(int i = 100; i<=sirina/2;i+=100)
+				 {
+					 g->DrawLine(mreza,(sirina/2)-i,0,(sirina/2)-i,visina);
 				 }
 				 for(int i = 100; i<=visina/2;i+=100)
 				 {
-					 g->DrawLine(osa,(sirina/2)-10,(visina/2)-i,(sirina/2)+10,(visina/2)-i);
+					 g->DrawLine(osa,(sirina/2)-5,i+visina/2,(sirina/2)+5,i+visina/2);
+				 }
+				 for(int i = 100; i<=visina/2;i+=100)
+				 {
+					 g->DrawLine(osa,(sirina/2)-5,(visina/2)-i,(sirina/2)+5,(visina/2)-i);
 				 }
 				 for(int i = 100;i<=sirina/2;i+=100)
 				 {
-					 g->DrawLine(osa,i+sirina/2,(visina/2)-10,i+sirina/2,(visina/2)+10);
+					 g->DrawLine(osa,i+sirina/2,(visina/2)-5,i+sirina/2,(visina/2)+5);
 				 }
 				 for(int i = 100;i<=sirina/2;i+=100)
 				 {
-					 g->DrawLine(osa,(sirina/2)-i,(visina/2)-10,(sirina/2)-i,(visina/2)+10);
+					 g->DrawLine(osa,(sirina/2)-i,(visina/2)-5,(sirina/2)-i,(visina/2)+5);
 				 }
+				 for(int i = 100; i<=visina/2;i+=100)
+				 {
+					 g->DrawString(Convert::ToString(i/100), broj, brush,(sirina/2)-32,(visina/2)-i-12);
+					 g->DrawString(Convert::ToString(-i/100), broj, brush,(sirina/2)-32,(visina/2)+i-12);
+				 }
+				 for(int i = 100; i<=sirina/2;i+=100)
+				 {
+					 g->DrawString(Convert::ToString(-i/100), broj, brush,(sirina/2)-i-12,(visina/2)+12);
+					 g->DrawString(Convert::ToString(i/100), broj, brush,(sirina/2)+i-12,(visina/2)+12);
+				 }
+
 
 			 }
 	};
