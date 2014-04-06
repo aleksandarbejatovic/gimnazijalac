@@ -5,7 +5,7 @@ using namespace System::Collections;
 using namespace System::Windows::Forms;
 using namespace System::Data;
 using namespace System::Drawing;
-
+#include <cmath>
 
 namespace Funkcije {
 
@@ -112,10 +112,12 @@ namespace Funkcije {
 
 				 Pen^ osa = gcnew Pen(Color::Black);
 				 Pen^ mreza = gcnew Pen(Color::Aqua);
+				 Pen^ funkcija = gcnew Pen(Color::Blue);
 				 System::Drawing::Font^ broj = gcnew System::Drawing::Font("Arial", 16);
 				 SolidBrush^ brush = gcnew SolidBrush(Color::Black);
 				 mreza->Width = 1;
 				 osa->Width = 2;
+				 funkcija->Width = 2;
 				 g->DrawLine(osa,0,visina/2,sirina,visina/2);
 				 g->DrawLine(osa,sirina/2,0,sirina/2,visina);
 				 for(int i = 100; i<=sirina/2;i+=100)
@@ -155,12 +157,31 @@ namespace Funkcije {
 					 g->DrawString(Convert::ToString(i/100), broj, brush,(sirina/2)-32,(visina/2)-i-12);
 					 g->DrawString(Convert::ToString(-i/100), broj, brush,(sirina/2)-32,(visina/2)+i-12);
 				 }
-				 for(int i = 100; i<=sirina/2;i+=100)
+				 for(int i = 0; i<=sirina/2;i+=100)
 				 {
 					 g->DrawString(Convert::ToString(-i/100), broj, brush,(sirina/2)-i-12,(visina/2)+12);
 					 g->DrawString(Convert::ToString(i/100), broj, brush,(sirina/2)+i-12,(visina/2)+12);
 				 }
-
+				 /*array<System::Drawing::Point>^ tacke;
+				 for(int i = 0; i<=sirina/2;i++)
+				 {
+					 tacke[i] = Point((sirina/2)+i,(visina/2)+sin(i*180/3.14));
+				 }
+				 for(int i = 0; i<=sirina/2;i++)
+				 {
+					 g->DrawCurve(funkcija, tacke);
+				 }*/
+				 array<Point>^ tacke = {Point(sirina/2,visina/2),
+										Point((sirina/2)+50,(visina/2)-175),
+										Point((sirina/2)+100,(visina/2)),
+										Point((sirina/2)+150,(visina/2)+175),
+										Point((sirina/2)+200,(visina/2)),
+										Point((sirina/2)+250,(visina/2)-175),
+										Point((sirina/2)+300,(visina/2)),
+										Point((sirina/2)+350,(visina/2)+175),
+										Point((sirina/2)+400,(visina/2)),
+										Point((sirina/2)+450,(visina/2)-175),};
+				 g->DrawCurve(funkcija,tacke);
 
 			 }
 	};
