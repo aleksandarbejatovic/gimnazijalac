@@ -44,6 +44,7 @@ namespace qwerty {
 	private: System::Windows::Forms::Button^  button1;
 	private: System::Windows::Forms::Button^  button2;
 	private: System::Windows::Forms::Button^  button3;
+	private: System::Windows::Forms::Button^  button4;
 
 	protected: 
 
@@ -63,6 +64,7 @@ namespace qwerty {
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->button3 = (gcnew System::Windows::Forms::Button());
+			this->button4 = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
 			// button1
@@ -95,11 +97,22 @@ namespace qwerty {
 			this->button3->UseVisualStyleBackColor = true;
 			this->button3->Click += gcnew System::EventHandler(this, &Form1::button3_Click);
 			// 
+			// button4
+			// 
+			this->button4->Location = System::Drawing::Point(246, 13);
+			this->button4->Name = L"button4";
+			this->button4->Size = System::Drawing::Size(71, 65);
+			this->button4->TabIndex = 3;
+			this->button4->Text = L"Opacity";
+			this->button4->UseVisualStyleBackColor = true;
+			this->button4->Click += gcnew System::EventHandler(this, &Form1::button4_Click);
+			// 
 			// Form1
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(Screen::PrimaryScreen->Bounds.Width, Screen::PrimaryScreen->Bounds.Height);
+			this->Controls->Add(this->button4);
 			this->Controls->Add(this->button3);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
@@ -182,7 +195,6 @@ void Crtaj()
 				 
 			 }
 private: System::Void Form1_Load(System::Object^  sender, System::EventArgs^  e) {
-			 Crtaj();
 			 }
 private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
 			 Application::Exit();
@@ -190,9 +202,15 @@ private: System::Void button1_Click(System::Object^  sender, System::EventArgs^ 
 private: System::Void button2_Click_1(System::Object^  sender, System::EventArgs^  e) {
 			 Graphics^ gr = this->CreateGraphics();
 			 gr->Clear(Color::White);
+			 this->TransparencyKey = System::Drawing::Color::Yellow;
 		 }
 private: System::Void button3_Click(System::Object^  sender, System::EventArgs^  e) {
+			 this->TransparencyKey = System::Drawing::Color::Yellow;
 			 Crtaj();
+		 }
+private: System::Void button4_Click(System::Object^  sender, System::EventArgs^  e) {
+				this->TransparencyKey = System::Drawing::Color::White;
+				Crtaj();
 		 }
 };
 }
